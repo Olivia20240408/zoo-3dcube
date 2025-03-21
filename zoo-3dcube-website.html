@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Zoo 3D Cube online - A fun educational 3D puzzle game featuring animals like cats, dogs, pigs, sheep, koalas and ants!">
+    <title>Zoo 3D Cube - Fun Animal Puzzle Game | Play Online</title>
+    <link rel="canonical" href="https://zoo-3dcube.com">
+    
+    <style>
+        :root {
+            --apple-blue: #007AFF;
+            --apple-green: #34C759;
+            --apple-orange: #FF9500;
+            --apple-pink: #FF2D55;
+            --apple-purple: #AF52DE;
+            --apple-yellow: #FFCC00;
+            --apple-gray: #8E8E93;
+            --apple-light-gray: #F2F2F7;
+            --apple-background: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: var(--apple-light-gray);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--apple-background);
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: var(--apple-blue);
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--apple-gray);
+            margin-bottom: 1.5rem;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .game-container {
+            background-color: var(--apple-background);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+        }
+        
+        .game-iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        
+        h2 {
+            color: var(--apple-blue);
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background-color: var(--apple-background);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: var(--apple-orange);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+        
+        .animals {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .animal-tag {
+            background-color: var(--apple-light-gray);
+            color: var(--apple-blue);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        
+        footer {
+            background-color: var(--apple-background);
+            padding: 2rem 1rem;
+            text-align: center;
+            color: var(--apple-gray);
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .game-iframe {
+                height: 400px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .game-iframe {
+                height: 350px;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zoo 3D Cube</h1>
+        <p class="tagline">Experience the animal kingdom in a colorful 3D puzzle adventure!</p>
+    </header>
+    
+    <main>
+        <section class="game-container">
+            <iframe class="game-iframe" src="https://zoo-js.github.io/3dcube/?red=cat&white=dog&blue=pig&green=sheep&orange=koala&yellow=ant&bg=*ffd8bf" title="Zoo 3D Cube Game - Play Online"></iframe>
+        </section>
+        
+        <section>
+            <h2>About Zoo 3D Cube</h2>
+            <p>Zoo 3D Cube is an engaging online puzzle game that challenges players to solve 3D cube puzzles featuring adorable animal characters. Each face of the cube represents a different animal, creating a unique and educational gaming experience for players of all ages.</p>
+            
+            <p>With intuitive controls and vibrant graphics, Zoo 3D Cube offers hours of entertainment while helping develop spatial reasoning skills. The game features smooth animations and responsive design, making it perfect for both desktop and mobile play.</p>
+        </section>
+        
+        <section>
+            <h2>Game Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Colorful Animal Characters</h3>
+                    <p>Explore a cube world populated with six adorable animals, each assigned to a different colored face:</p>
+                    <div class="animals">
+                        <span class="animal-tag">Red: Cat</span>
+                        <span class="animal-tag">White: Dog</span>
+                        <span class="animal-tag">Blue: Pig</span>
+                        <span class="animal-tag">Green: Sheep</span>
+                        <span class="animal-tag">Orange: Koala</span>
+                        <span class="animal-tag">Yellow: Ant</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Educational Benefits</h3>
+                    <p>Zoo 3D Cube isn't just fun—it's educational too! Players develop critical skills including:</p>
+                    <ul>
+                        <li>Spatial awareness</li>
+                        <li>Problem-solving abilities</li>
+                        <li>Pattern recognition</li>
+                        <li>Memory enhancement</li>
+                        <li>Hand-eye coordination</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Accessibility</h3>
+                    <p>Play anywhere, anytime! Our game is designed to work seamlessly across devices:</p>
+                    <ul>
+                        <li>Desktop computers</li>
+                        <li>Tablets</li>
+                        <li>Mobile phones</li>
+                        <li>No downloads required</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>How to Play</h2>
+            <p>Playing Zoo 3D Cube is simple and intuitive. Use your mouse or touchscreen to rotate the cube and explore all six animal faces. Challenge yourself to solve puzzles by arranging the animals in specific patterns or simply enjoy the satisfying experience of manipulating the 3D cube.</p>
+            
+            <p>The game is suitable for players of all ages, with no time limits or complicated rules. Just jump in and start exploring the world of Zoo 3D Cube!</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Zoo 3D Cube. All rights reserved.</p>
+    </footer>
+</body>
+</html>
